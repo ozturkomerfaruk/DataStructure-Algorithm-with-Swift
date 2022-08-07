@@ -13,14 +13,16 @@
 9. 4 sayısı 7'den, 5'den küçük devamında da 1'den ve 3'den büyük 3'ün sağına yazılır.
 10. 2 sayısı 7'den, 5'den küçük, 1'den büyük ve 3'den küçüktür. 3'ün soluna yazılır.
 
-           7
-          / \
-         5   8
-        / \   \
-       1   6   9
-      / \
-     0   3 
-        / \
-       2    4
+
+
+                       7
+                      / \
+                     5   8
+                    / \   \
+                   1   6   9
+                  / \
+                 0   3 
+                    / \
+                   2   4
        
  Ağaç gösterimi bu şekildedir.
