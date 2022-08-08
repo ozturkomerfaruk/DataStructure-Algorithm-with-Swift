@@ -29,3 +29,9 @@ Diğer bir ilişki türü ise bir sınıfın kendisiyle kurduğu ilişkidir. Bu 
 ## Bağımlılık İlişkisi (Dependency) ve Birleştirme (Aggregation, Composition)
 
 ![image](https://raw.githubusercontent.com/Kodluyoruz/taskforce/main/oop/uml-class-diagram/figures/c7.jpg)
+
+## Gerçekleştirim (Realization) İlişkisi
+![image](https://patika-prod.s3-eu-central-1.amazonaws.com/content/modules/oop/lessons/uml-class-diagram/TAiA8PyEETA9DGFEp)
+
+
+
