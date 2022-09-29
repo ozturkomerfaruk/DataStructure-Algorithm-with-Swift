@@ -1,4 +1,3 @@
 # DataStructure-Algorithm-with-Python
 
-#1 Phyton'a Giriş
- 
+Veri Yapıları ile ilgili python çalışmalarım.
