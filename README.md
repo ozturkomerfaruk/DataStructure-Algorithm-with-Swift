@@ -1,3 +1,3 @@
 # DataStructure-Algorithm-with-Swift
 
-Veri Yapıları ile ilgili python çalışmalarım.
+Veri Yapıları ile ilgili swift çalışmalarım.
