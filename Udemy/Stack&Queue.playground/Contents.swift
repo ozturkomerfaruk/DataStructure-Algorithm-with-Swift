@@ -37,11 +37,11 @@ struct Queue<Item> {
 
 extension Queue: CustomStringConvertible {
     var description: String{
-        let start = "Queue\n\n"
-        let end = "\n\n[HEAD]"
+        let start = "--Queue--\n"
+        let end = "\n---------"
         let elements = items.map {
             String(describing: $0)
-        }.joined(separator: " -> ")
+        }.reversed().joined(separator: " -> ")
         return start + elements + end
     }
     
@@ -51,18 +51,52 @@ extension Queue: CustomStringConvertible {
 }
 
 var queue: Queue = Queue<String>()
-
-print(queue.isEmpty())
-
 queue.enqueue(item: "One")
 queue.enqueue(item: "Two")
 queue.enqueue(item: "Three")
-queue.enqueue(item: "Four")
-queue.enqueue(item: "Five")
-
-queue.dequeue()
 queue.printQueue()
 
-print(queue.isEmpty())
-print(queue.size())
+struct Stack<Item> {
+    private var items: [Item] = []
+    
+    // Peek
+    func peek() -> Item {
+        guard let topItem = items.last else { fatalError("The stack is empty!") }
+        return topItem
+    }
+    
+    mutating func pop() -> Item {
+        return items.removeLast()
+    }
+    
+    mutating func push(item: Item) {
+        items.append(item)
+    }
+    
+    mutating func isEmpty() -> Bool {
+        return items.count == 0
+    }
+    
+    mutating func lastItem() -> Item {
+        return items[items.count - 1]
+    }
+}
 
+extension Stack: CustomStringConvertible {
+    var description: String {
+        let top = "--Stack--\n"
+        let bottom = "\n---------"
+        let elements = items.map { String(describing: $0)}.joined(separator: " -> ")
+        return top + elements + bottom
+    }
+    
+    func printStack() {
+        print(description)
+    }
+}
+
+var stack = Stack<String>()
+stack.push(item: "One")
+stack.push(item: "Two")
+stack.push(item: "Three")
+stack.printStack()
