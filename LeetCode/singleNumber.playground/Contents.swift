@@ -13,10 +13,10 @@ func singleNumber(nums: inout [Int]) -> Int {
     }
 }
 
-//MARK: Bit Manipulation
+var dict: [String : Int] = ["asd":10, "qq":12]
 
-// ^ ---> XOR
-/// 0-0 -> 0
-/// 1-1 -> 0
-/// 1-0 -> 1
-/// 0-1 -> 1
+print(dict)
+
+for i in dict {
+    print(i.key)
+}
