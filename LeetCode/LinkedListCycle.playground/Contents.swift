@@ -5,7 +5,7 @@ public class ListNode {
     public var next: ListNode?
     public init(_ val: Int) {
         self.val = val
-        self.next = nil
+        self.next = nsil
     }
 }
 
